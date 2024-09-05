@@ -1,0 +1,12 @@
+import os
+
+# Definir el nombre del archivo y su contenido
+nombre_archivo = "mi_archivo.txt"
+contenido = "Este es el contenido del archivo que vamos a guardar."
+
+# Guardar el archivo en el directorio actual
+with open(nombre_archivo, 'w') as archivo:
+    archivo.write(contenido)
+
+# Confirmar que el archivo ha sido guardado
+print(f"Archivo '{nombre_archivo}' guardado exitosamente en: {os.getcwd()}")
